@@ -1,5 +1,4 @@
 import streamlit as st
-import time
 
 st.title('Calculator')
 
@@ -8,16 +7,7 @@ logtxtbox = st.empty()
 logtxt = 'start'
 logtxtbox.text_area("Enter Problem",logtxt)
 
-end_of_loop = False
-counter = 1
-
-while (end_of_loop==False):
-
-    logtxt += 'Counter [' + str(counter) + '] \n'
+Button_9 = st.button('9', key=1)
+if Button_9:
+    logtxt += '9'
     logtxtbox.text_area("Proble Here", logtxt,)
-
-    counter += 1
-    if (counter > 100):
-        end_of_loop = True
-
-    time.sleep(0.2)
