@@ -7,7 +7,7 @@ st.title('Logging in Text Box')
 # creating a placeholder for the fixed sized textbox
 logtxtbox = st.empty()
 logtxt = 'start'
-logtxtbox.text_area("Logging: ",logtxt, height = 500)
+logtxtbox.text_area("Enter Problem",logtxt)
 
 end_of_loop = False
 counter = 1
