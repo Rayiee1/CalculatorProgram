@@ -4,7 +4,7 @@ st.title('Calculator')
 
 # creating a placeholder for the fixed sized textbox
 logtxtbox = st.empty()
-logtxt = 'start'
+logtxt = ''
 logtxtbox.text_area("Enter Problem",logtxt)
 
 Button_9 = st.button('9', key=1)
