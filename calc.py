@@ -15,7 +15,7 @@ counter = 1
 while (end_of_loop==False):
 
     logtxt += 'Counter [' + str(counter) + '] \n'
-    logtxtbox.text_area("Logging: ", logtxt, height=500)
+    logtxtbox.text_area("Proble Here", logtxt,)
 
     counter += 1
     if (counter > 100):
