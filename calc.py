@@ -1,11 +1,24 @@
 import streamlit as st
+import time
 
-st.title("Calculator")
+st.set_page_config(layout="wide")
+st.title('Logging in Text Box')
 
-placeholder = st.empty()
+# creating a placeholder for the fixed sized textbox
+logtxtbox = st.empty()
+logtxt = 'start'
+logtxtbox.text_area("Logging: ",logtxt, height = 500)
 
-user_input = st.text_input("Enter Your Problem")
-button_9 = st.button('9', key=9)
-button_8 = st.button('8', key=8)
-if button_9:
-    user_input = placeholder.text_input('', value='9', key=9,)
+end_of_loop = False
+counter = 1
+
+while (end_of_loop==False):
+
+    logtxt += 'Counter [' + str(counter) + '] \n'
+    logtxtbox.text_area("Logging: ", logtxt, height=500)
+
+    counter += 1
+    if (counter > 100):
+        end_of_loop = True
+
+    time.sleep(0.2)
