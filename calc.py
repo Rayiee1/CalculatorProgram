@@ -1,7 +1,6 @@
 import streamlit as st
 import time
 
-st.set_page_config(layout="wide")
 st.title('Calculator')
 
 # creating a placeholder for the fixed sized textbox
