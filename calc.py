@@ -3,7 +3,7 @@ import streamlit as st
 st.title('Calculator')
 
 # creating a placeholder for the fixed sized textbox
-logtxtbox = st.text_input()
+logtxtbox = st.empty()
 logtxt = ''
 logtxtbox.text_area("Enter Your Problem",logtxt)
 
