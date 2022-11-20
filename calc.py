@@ -4,4 +4,4 @@ st.title("Calculator")
 
 user_text = st.text_input("Input Your Problem", max_chars=None)
 if st.button("9"):
-    st.write("9")
+    upadate_text = st.text_input("9")
